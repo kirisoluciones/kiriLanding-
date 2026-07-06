@@ -48,9 +48,10 @@ a {
   z-index: 10;
   display: flex;
   width: 100%;
+  height: 92px;
   align-items: center;
   justify-content: space-between;
-  padding: 16px clamp(18px, 5vw, 64px);
+  padding: 0 clamp(18px, 5vw, 64px);
   color: var(--white);
   transition: background 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
 }
@@ -66,13 +67,14 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  width: clamp(150px, 19vw, 245px);
-  min-width: 150px;
+  width: clamp(230px, 30vw, 390px);
+  min-width: 230px;
+  height: 100%;
 }
 
 .brand-logo {
   width: 100%;
-  height: 54px;
+  height: 100%;
   object-fit: contain;
   object-position: left center;
   filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.18));
@@ -790,7 +792,7 @@ textarea {
 
   .main-nav {
     position: absolute;
-    top: 78px;
+    top: 92px;
     right: 18px;
     left: 18px;
     display: none;
@@ -857,13 +859,21 @@ textarea {
 }
 
 @media (max-width: 560px) {
+  .site-header {
+    height: 78px;
+  }
+
+  .main-nav {
+    top: 78px;
+  }
+
   .brand {
-    width: 138px;
-    min-width: 138px;
+    width: 190px;
+    min-width: 190px;
   }
 
   .brand-logo {
-    height: 48px;
+    height: 100%;
   }
 
   .hero h1 {
