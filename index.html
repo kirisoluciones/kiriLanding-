@@ -40,25 +40,92 @@
     </header>
 
     <main>
-      <section class="hero" id="inicio">
-        <img class="hero-real" src="assets/trabajo-chaleco-azul.jpeg" alt="Chaleco azul corporativo personalizado con bordado" />
+      <section class="hero" id="inicio" data-hero-carousel>
+        <div class="hero-slides" aria-hidden="true">
+          <img
+            class="hero-slide is-active hero-digital"
+            src="assets/hero-soluciones-empresariales.png"
+            alt=""
+            data-hero-image
+          />
+          <img
+            class="hero-slide hero-real"
+            src="assets/trabajo-chaleco-azul.jpeg"
+            alt=""
+            data-hero-image
+          />
+          <img
+            class="hero-slide hero-merch"
+            src="assets/kiri_logo.png"
+            alt=""
+            data-hero-image
+          />
+        </div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Imagen visible para empresas que quieren crecer</p>
-          <h1>Hacemos que tu marca se vea mas profesional en el mundo real.</h1>
-          <p>
-            Ayudamos a empresas a ordenar, visibilizar y elevar su imagen a traves de
-            uniformes corporativos, detalles de marca y una presentacion pensada para generar confianza.
-          </p>
-          <div class="hero-proof" aria-label="Especialidades principales">
-            <span>Imagen corporativa</span>
-            <span>Uniformes</span>
-            <span>Bordados</span>
-            <span>Presencia profesional</span>
-          </div>
+        <div class="hero-content" data-hero-content>
+          <article class="hero-panel is-active" data-hero-panel>
+            <p class="eyebrow">01. Imagen digital</p>
+            <h1>Hacemos que tu empresa se vea profesional antes del primer contacto.</h1>
+            <p>
+              Ordenamos tu presencia visual para que clientes y proveedores entiendan rapido
+              quien sos, que haces y por que pueden confiar en tu marca.
+            </p>
+            <div class="hero-proof" aria-label="Especialidades de imagen digital">
+              <span>Identidad visual</span>
+              <span>Landing</span>
+              <span>Redes</span>
+              <span>Presentacion</span>
+            </div>
+          </article>
+
+          <article class="hero-panel" data-hero-panel>
+            <p class="eyebrow">02. Uniformes</p>
+            <h1>Convertimos tu marca en presencia diaria para tu equipo.</h1>
+            <p>
+              Chalecos, camperas, camisas y prendas personalizadas con logo, bordado o estampa
+              para que la atencion se vea mas prolija y reconocible.
+            </p>
+            <div class="hero-proof" aria-label="Especialidades de uniformes">
+              <span>Bordado</span>
+              <span>Chalecos</span>
+              <span>Camperas</span>
+              <span>Equipos</span>
+            </div>
+          </article>
+
+          <article class="hero-panel" data-hero-panel>
+            <p class="eyebrow">03. Merchandising</p>
+            <h1>Llevamos tu identidad a piezas que hacen que te recuerden.</h1>
+            <p>
+              Aplicamos tu marca en materiales utiles y visibles para reforzar recordacion,
+              profesionalismo y coherencia en cada punto de contacto.
+            </p>
+            <div class="hero-proof" aria-label="Especialidades de merchandising">
+              <span>Marca aplicada</span>
+              <span>Regalos</span>
+              <span>Papeleria</span>
+              <span>Material comercial</span>
+            </div>
+          </article>
+
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contacto">Mejorar mi imagen</a>
             <a class="btn btn-secondary" href="#trabajos">Ver trabajos</a>
+          </div>
+
+          <div class="hero-carousel-controls" aria-label="Puntos principales">
+            <button class="is-active" type="button" data-hero-control="0">
+              <span>01</span>
+              Imagen digital
+            </button>
+            <button type="button" data-hero-control="1">
+              <span>02</span>
+              Uniformes
+            </button>
+            <button type="button" data-hero-control="2">
+              <span>03</span>
+              Merchandising
+            </button>
           </div>
         </div>
       </section>
