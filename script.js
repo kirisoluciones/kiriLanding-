@@ -25,7 +25,6 @@ window.addEventListener("scroll", updateHeader, { passive: true });
 updateHeader();
 
 if (heroCarousel) {
-  const images = [...heroCarousel.querySelectorAll("[data-hero-image]")];
   const panels = [...heroCarousel.querySelectorAll("[data-hero-panel]")];
   const controls = [...heroCarousel.querySelectorAll("[data-hero-control]")];
   let currentSlide = 0;
@@ -33,10 +32,6 @@ if (heroCarousel) {
 
   const setHeroSlide = (index) => {
     currentSlide = index;
-
-    images.forEach((image, imageIndex) => {
-      image.classList.toggle("is-active", imageIndex === index);
-    });
 
     panels.forEach((panel, panelIndex) => {
       panel.classList.toggle("is-active", panelIndex === index);
